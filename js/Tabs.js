@@ -1,40 +1,5 @@
 'use strict';
-/*
 
-
-const asTabs=(node)=> {
-  console.log(node.children);
-  const tabs = node.querySelectorAll('div');
-
-  for (let tab of tabs) {
-    console.log(tab);
-    const button = document.createElement('button');
-    button.innerHTML = tab.dataset.tabname;
-    node.insertBefore(button, tab);
-    console.log(button);
-
-    button.addEventListener("click", event =>{
-      console.log("button pressed");
-      tabData(tab);
-      })
-    }
-
-  console.log(tabs);
-};
-
-const selectTab= n =>{
-  tabs.forEach((tab,i)=> {
-    if(i===n) tab.style.display = "";
-    else tab.style.display = "none";
-  });
-  for(let i = 0;i < tabs.children.length; i++ ){
-    if (i === n) tabs.childNodes[i].style.background= "violet";
-    else tabs.childNodes[i].style.background= "";
-  }
-};
-
-
-asTabs(document.querySelector("tab-panel")); */
 
 const asTabs=node=> {
   const tabs = [];
